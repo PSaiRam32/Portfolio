@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Certifications</a></1li>
+                <li><a href="#">Projects</a></1li>
+                <li><a href="#">Contact</a></1li>       
+            </ul>
+        </nav>
+        <div class="header-text">
+            <P>Web developer</P>
+            <h1>Hi I'm <span>Sai Ram </span></h1>
+        </div>
+        </div>
+    </div>
+
+<div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Sai Ram.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am eager to apply my academic knowledge, enthusiasm, and strong work
+                        ethic to contribute to the success of the company. I am seeking a challeng
+                       ing role that will allow me to develop and enhance my skills while making a
+                        meaningful contribution to the organization goals. Through continuous learn
+                       ing, dedication, and teamwork, I aim to build a successful career and become
+                        an asset to the organization.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experince')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Developemnt</span><br>Designing Web/App Interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experince">
+                            <ul>
+                                <li><span>2020-Current</span><br>KL University</li>
+                                <li><span>2018-2020</span><br>Designing Web/App Interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Developemnt</span><br>Designing Web/App Interfaces</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+ </div>
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+       for(tablinks of tablinks){
+            tablinks.classList.remove("active-link");
+        }
+        for(tabcontents of tabcontents){
+            tabcontents.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+ </script>
+    
+</body>
+</html> 
