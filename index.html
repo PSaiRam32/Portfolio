@@ -12,13 +12,15 @@
         <div class="container">
         <nav>
             <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Certifications</a></1li>
-                <li><a href="#">Projects</a></1li>
-                <li><a href="#">Contact</a></1li>       
+            <ul id="sidmenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Certifications</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>   
+                <i class="fas fa-times" onclick="closemenu()"></i>    
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <P>Web developer</P>
@@ -152,6 +154,7 @@
                     <a href="#"><i class="fab fa-snapchat"></i></a>
                 </div>
                  <a href="#" class="btn btn2">Download CV</a>
+                 <!-- Images folder images/CV-Pdf -->
             </div>
             <div class="contat-right">
                 <form>
@@ -168,7 +171,7 @@
     </div>
 </div>
 
- <script>
+ <!-- <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
     function opentab(tabname){
@@ -181,7 +184,29 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
      }
- </script>
-    
+ </script> -->
+ <script> 
+    var tablinks = document.getElementsByClassName("tab-links") 
+    var tabcontents = document.getElementsByClassName("tab-contents") 
+    function opentab(tabname){ 
+      for(tablink of tablinks){ 
+        tablink.classList.remove("active-link"); 
+      } 
+      for(tabcontent of tabcontents){ 
+        tabcontent.classList.remove("active-tab"); 
+      } 
+      event.currentTarget.classList.add("active-link") 
+      document.getElementById(tabname).classList.add("active-tab"); 
+    } 
+  </script>     
+    <script>
+        var sidmenu = document.getElementById("sidmenu");
+        function openmenu(){
+            sidmenu.style.right="0";
+        }
+        function closemenu(){
+            sidmenu.style.right="0";
+        }
+    </script>
 </body>
 </html> 
