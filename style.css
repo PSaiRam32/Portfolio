@@ -14,11 +14,48 @@ html{
 #header{
     width: 100%;
     height: 100vh;
-    /* background-image: url(Images/Sai.jpg); */
+    /* background-image: url(Images/Sai\ Ram.jpg);   */
     background-size: cover;
     background-position: center;
+    background-color: black;
 }
+.logo{
+   background-color: black;
+   border-radius: 50px;
+}
+.header-text {
+   display: flex;
+   align-items: center;
+ }
 
+ .header-text h1,
+    .header-text h2 {
+      margin: 0;
+    }
+
+ .header-text h1 {
+   font-size: 14px;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   margin-top: -10px;
+
+ }
+ .header-text h2 {
+   font-size: 14px;
+      margin-top: -10px;
+
+ }
+
+ .header-text span {
+   color: #ff0000;
+ }
+
+ .mainimage img {
+   width: 200px;
+   height: auto;
+   margin-left: 300px;
+   border-radius: 50px;
+ }
 .container{
   padding: 10px 10%;
 }
@@ -207,7 +244,7 @@ nav ul li a{
    border-radius: 10px;
    transition: background 0.5s, transform 0.5s;
    flex: 1 1 250px;
-   max-width: 250px;
+   max-width: 350px;
    text-align: center;
 }
 
@@ -367,20 +404,20 @@ nav ul li a{
  color: #ff004f;
 }
 .btn:hover{
-  background: #ff004f;
+  /* background: #ff004f; */
 }
 /* -------------contact----------- */
-.contat-left{
+.contact-left{
   flex-basis: 35%;
 }
-.contat-right{
+.contact-right{
    flex-basis: 60%;
  }
 
- .contat-left p{
+ .contact-left p{
    margin-top: 30px;
  }
- .contat-left p i{
+ .contact-left p i{
    color: #ff004f;
    margin-right: 15px;
    font-size: 25px;
@@ -460,7 +497,7 @@ nav .fas{
      background: #ff004f;
      position: fixed;
      top: 0;
-     right: 0; 
+     right: -200px; 
      width: 200px;
      height: 100vh;
      padding-top: 50px;
@@ -499,5 +536,13 @@ nav .fas{
    .copy-right{
      font-size: 14px; 
    }
+   
 
+}
+ 
+
+#msg{
+ color: #61b752;
+ margin-top: -40px;
+ display: block;
 }

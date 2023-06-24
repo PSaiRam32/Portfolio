@@ -11,21 +11,25 @@
     <div id="header">
         <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidmenu">
+            <div class="logo"><img src="images/peakpx.jpg" class="logo"></div>
+            
+            <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#About">About</a></li>
+                <li><a href="#portfolio">Academic Projects</a></li>
                 <li><a href="#services">Certifications</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>   
+                <li> <a href="#contact">Contact</a></li>
+                <!-- <li><a href="#contact-left">Contact</a></li>    -->
                 <i class="fas fa-times" onclick="closemenu()"></i>    
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <P>Web developer</P>
-            <h1>Hi I'm <span>Sai Ram </span></h1>
+            <h1><span>Sai Ram Paidipati</span><br>
+                Cloud & UI Developer </h1>
+            <div class="mainimage"><img src="Images/Sai.jpg"></div>
         </div>
+       
         </div>
     </div>
 
@@ -46,25 +50,40 @@
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('experience')">Internships</p>
+                            <p class="tab-links" onclick="opentab('Co-Activites')">Co-Circular Activites</p>
+                            <p class="tab-links" onclick="opentab('E-Activites')">Extra-Circular Activities</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Coding</span><br>C,C++,Java</li>
+                                <li><span>Cloud Skills</span><br>Amazon Web Services,Google Cloud Platform</li>
                                 <li><span>Web Developemnt</span><br>Designing Web/App Interfaces</li>
+                                
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>2020-Current</span><br>KL University</li>
-                                <li><span>2018-2020</span><br>Intermediate</li>
-                                <li><span>2017-2018</span><br>10th Class</li>
+                                <li><span>2020-Current</span><br>B-Tech Computer Scince and Engineering-Honors<br>KL University,Guntur<br> CGPA : 9.18</li>
+                                <li><span>2018-2020</span><br>Intermediate<br>Sri Chaitanya Junior Collge,Eluru<br> CGPA : 9.69</li>
+                                <li><span>2017-2018</span><br>SSC<br>Sri Chaitanya EM School,Eluru<br>CGPA : 10</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>AICTE</span><br>Cloud Virtual Internship</li>
-                                <li><span>Microsoft</span><br>Future Ready Talent Internship</li>
+                                <li><span>Cloud Virtual Internship</span><br>AICTE<br>Duration : March 2022-June 2022</li>
+                                <li><span>Future Ready Talent Internship</span><br>Microsoft<br>Duration : June 2022-August 2022</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Co-Activites">
+                            <ul>
+                                <li><span>Student Peer Mentor</span><br>KL University<br>Duration : May 2021-May 2023</li>
+                                <li><span>5 Days Aptitude WorkShop</span><br>Talent Battle<br>Duration : June 2022-August 2022</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="E-Activites">
+                            <ul>
+                                <li><span>Focus-Lead</span><br>Reslove Wing<br>KL University-CSE Student Body<br>Duration : June 2022-May 2022</li>
                             </ul>
                         </div>
                 </div>
@@ -74,27 +93,30 @@
  <!-- ----------------------------services----------->
  <div id="services">
     <div class="cointainer">
-        <h1 class="sub-title" style=" padding-left: 150px;">My Services</h1>
+        <h1 class="sub-title" style=" padding-left: 150px;">My Projects</h1>
             <div class="services-list">
             <div>
-                <i class="fas fa-code"></i>
-                <h2>WeB Designing</h2>
-                <p>Description</p>
-                <a href="#">Learn more</a>
+                <i class="fa-solid fa-building-columns"></i>
+                <h2>Student-Faculty Management System</h2>
+                <p>A web application was Developed using JavaEE which displays information of every Student and Faculty in the Institution.</p>
+                <a href="https://github.com/PSaiRam32/EP-Project">Learn more</a>
             </div>
             <div>
-                <i class="fas fa-crop-alt"></i>
-                <h2>Cloud Computing</h2>
-                <p>Description</p>
-                <a href="#">Learn more</a>
+                <i class="fa-solid fa-book-atlas"></i>
+                <h2>Course Management System</h2>
+                <p>A web application was developed using Java Full Stack to access
+                    the Registered courses through online</p>
+                <a href="https://github.com/PSaiRam32/JFSD-Project">Learn more</a>
             </div>
             <div>
-                <i class="fas fa-app-store"></i>
-                <h2>WeB Designing</h2>
-                <p>Description</p>
-                <a href="#">Learn more</a>
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h2>LinkSwift</h2>
+                <p>A Telegram Bot was Developed uinsg AWS Cloud Serverless Services which
+                    helps the users to shorten the Long Urls.</p>
+                <a href="https://github.com/PSaiRam32/AWS-Serverless-URL-SHORTEN-BOT">Learn more</a>
             </div>
         </div>
+        <a href="https://github.com/PSaiRam32/" class="btn">See More</a>
     </div>
  </div>
 <!-- -------------------portfolia----- -->
@@ -105,69 +127,70 @@
             <div class="work">
                 <img src="Images/AWS-CP.jpeg" alt="">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p> Description</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>AWS Cloud Practitioner</h3>
+                    <p>A strong foundation and understanding of cloud services offered by AWS. </p>
+                    <a href="https://www.credly.com/badges/6e692cfe-3fc7-4ee5-af56-8f9a0816e51f/public_url"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="Images/AWS-DA.jpeg" alt="">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p> Description</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>AWS Developer Associate</h3>
+                    <p>A comprehensive understanding of cloud development using AWS. </p>
+                    <a href="https://www.credly.com/badges/a56dfdaf-36a1-4e06-bdad-6067cf726ed5/public_url"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="Images/GCP-ACE.png" alt="">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p> Description</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>Associate Cloud Enginner</h3>
+                    <p> A Skill to deploy and maintain applications on the Google Cloud.</p>
+                    <a href="https://www.credential.net/fad872d1-e10a-4d33-8b06-ab72251e441f"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="Images/Redhat.png" alt="">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p> Description</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>Enterprise Application Developer</h3>
+                    <p> A skill to  develop enterprise-level applications using Red Hat.</p>
+                    <a href="https://www.credly.com/badges/4c5c181f-4534-455b-a13c-675edfed89ec/public_url"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <a href="https://www.credly.com/earner/earned" class="btn">See More</a>
     </div>
 </div>
 <!-- -----------------------------Contact------------ -->
 <div class="contact">
     <div class="container">
         <div class="row">
-            <div class="contat-left">
+            <div class="contact-left">
                 <h1 class="sub-title"> Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i> Contact@Example.com</p>
+                <p><i class="fas fa-paper-plane"></i> sairampaidipati55@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i> 6302314431</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                    <a href="https://www.facebook.com/sairam.paidipati?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                    <a href="https://in.linkedin.com/in/sairam-paidipati"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/sai__.32?igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/SaiRam_32?t=s9MauXFPd2ViMQV8mVmwUw&s=09"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.snapchat.com/add/sairam_32?share_id=fLNq9OF4O4E&locale=en-IN"><i class="fab fa-snapchat"></i></a>
                 </div>
                  <a href="#" class="btn btn2">Download CV</a>
                  <!-- Images folder images/CV-Pdf -->
             </div>
-            <div class="contat-right">
-                <form>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea type="Message" row="6" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
     <div class="copy-right">
-        <p>Copyright $ Sai Ram</p>
+        <p><i class="fa-regular fa-copyright"></i> Copyright 2023 by Sai Ram Paidipati</p>
     </div>
 </div>
 
@@ -200,13 +223,31 @@
     } 
   </script>     
     <script>
-        var sidmenu = document.getElementById("sidmenu");
+        var sidemenu = document.getElementById("sidemenu");
         function openmenu(){
-            sidmenu.style.right="0";
+            sidemenu.style.right="0";
         }
         function closemenu(){
-            sidmenu.style.right="0";
+            sidemenu.style.right="-200px";
         }
     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyfOqWyKPb0qmJqdXnqvc4aPeWkqzLrJjUy6TtsXsJAEkqLU0hH-qtw4RQDysSrgdN7/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Message sent Successfully"
+              setTimeout(function(){
+                msg.innerHTML = " "  
+            },5000)
+            form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html> 
+
